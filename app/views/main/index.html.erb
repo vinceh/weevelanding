@@ -1,0 +1,36 @@
+<div class='mainheader'>
+  <div class='weevewidth landingheadercontent'>
+    <div class='landinglogo'>
+      <img src="<%=asset_path('landing-logo.png')%>"></img>
+    </div>
+    <div class='landinglinks'>
+
+    </div>
+  </div>
+</div>
+<div class='landing weevewidth'>
+
+  <div class='landingwords'>
+    <div class='landingnumber'><div>1</div></div>discover projects
+    <div class='landingspace'></div>
+    <div class='landingnumber'><div>2</div></div>fund
+    <div class='landingspace'></div>
+    <div class='landingnumber'><div>3</div></div>earn rewards
+  </div>
+  <div class='landingsentence'>Weeve is an upcoming social venture that focuses on generating funds for community projects taken on by nonprofit organizations (NPO) and rewarding donors for engaging in social philanthropy.  Subscribe yourself to our mailing list to get all the updated info on Weeve and early access to our beta website.</div>
+    <div class='subscribe-form'>
+        <%= form_for @useremail do |f| -%>
+
+        <%= f.text_field :email, :class => 'subscribe-form-field' %>
+        <%= f.submit "Submit", :class => 'weeve-medium-button subscribe-submit'%>
+        <% end -%>
+    </div>
+    <% if flash[:message] %>
+      <div class='flash-msg-wrap'>
+          Thank you!  You have been added to our mailing list. <span class='weeve-link flash-close' >close</span>
+      </div>
+    <% end %>
+  <div class='subscribe-footer'>
+    &copy Weeve Ventures Inc.
+  </div>
+</div>
