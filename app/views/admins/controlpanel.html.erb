@@ -8,4 +8,7 @@ YOU ARE LOGGED IN MY FRIEND
 <br/>
 <%= link_to "Logout", :action => :logout %> <br/>
 
+<% @emails.each do |e| %>
+    <%= e.email %><br/>
+<% end %>
 <hr/>

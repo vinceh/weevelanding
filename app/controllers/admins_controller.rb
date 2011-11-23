@@ -28,8 +28,9 @@ class AdminsController < ApplicationController
 	end
 
 	def controlpanel
-
+		@emails = Useremail.all
 	end
+
 	protected
 
 	def check_password(admin, password)
