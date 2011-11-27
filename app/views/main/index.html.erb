@@ -14,12 +14,13 @@
     <div class='landingspace'></div>
     <div class='landingnumber'><div>3</div></div>earn rewards
   </div>
-  <div class='landingsentence'>Weeve is an upcoming social venture that focuses on generating funds for community projects taken on by nonprofit organizations (NPO) and rewarding donors for engaging in social philanthropy.  Subscribe yourself to our mailing list to get all the updated info on Weeve and early access to our beta website.</div>
-    <div class='subscribe-form'>
+  <div class='landingsentence'>Weeve is an upcoming <span class='weevedark'>social venture</span> that focuses on generating funds for <span class='weevedark'>community projects</span> taken on by nonprofit organizations and <span class='weevedark'>rewarding donors</span> for engaging in social philanthropy.   </div>
+  <div class='landingsentence-sub'>Join our invite list.</div>
+  <div class='subscribe-form'>
         <%= form_for @useremail do |f| -%>
 
         <%= f.text_field :email, :class => 'subscribe-form-field' %>
-        <%= f.submit "Submit", :class => 'weeve-medium-button subscribe-submit'%>
+        <%= f.submit "Subscribe", :class => 'weeve-medium-button subscribe-submit'%>
         <% end -%>
     </div>
     <% if flash[:message] %>
